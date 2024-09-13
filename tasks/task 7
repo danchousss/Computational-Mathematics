@@ -1,0 +1,17 @@
+! TASK 7
+program machine_infinity
+  real :: z, last
+  integer :: iterations
+  z = 1.0
+  iterations = 0
+  do while (2 * z > z)
+    last = z
+     z = z * 2
+     iterations=iterations+1
+    
+  end do 
+  print *, 'machine infinity is : ', last
+  print *, 'number of iterations is', iterations
+  
+  end program 
+  
